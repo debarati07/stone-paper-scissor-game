@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #46649c;
+  font-family: "Barlow", sans-serif;
+  background: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/zoom-background-template-design-002cc5a90615130ec4858f4b0505d468_screen.jpg?ts=1610889250");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scoreboard {
+  width: 600px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  height: 100px;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  margin-left: 20px;
+}
+.score {
+  margin-right: 30px;
+  background-color: white;
+  width: 100px;
+  height: 70px;
+  border-radius: 10px;
+  text-align: center;
+}
+.score h1 {
+  color: #565468;
+}
+.score p {
+  color: navy;
+}
+.hands {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 70px;
+}
+.hand {
+  cursor: pointer;
+  padding: 20px;
+}
+.hand:hover {
+  transform: translate3d(0, 10px, 0);
+}
+/*contest*/
+.contest {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  color: antiquewhite;
+  padding: 20px;
+  display: none;
+}
+.contest h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.message {
+  margin: auto;
+  font-size: 2.5rem;
+}
+.btn {
+  text-align: center;
+}
+button {
+  padding: 10px;
+  border-radius: 6px;
+  color: hsl(229, 25%, 31%);
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background-color: bisque;
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  body {
+    backdrop-filter: blur(4px);
+  }
+  .scoreboard {
+    width: 100%;
+    border: none;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .score {
+    margin: auto;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #2b3747;
+  }
+  .hands {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .contest {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .contest img {
+    display: block;
+    height: 100px;
+    width: 100px;
+  }
+  .user {
+    margin: auto;
+  }
+  button {
+    margin-bottom: 15px;
+  }
+  #botimageid {
+    margin: auto;
+  }
+  .hands img {
+    width: 100px;
+    height: 100px;
+  }
+}

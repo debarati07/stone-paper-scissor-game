@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!--Css link-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="scoreboard">
+        <div class="title">Rock-Paper-Scissors</div>
+        <div class="score">
+          <p>SCORE:</p>
+          <h1 id="scorecard">0</h1>
+        </div>
+      </div>
+      <div class="hands">
+        <div class="rock hand">
+          <img
+            src="images/rock.png"
+            alt="rock"
+            height="150px"
+            width="150px"
+            onclick="userchoice('rock')"
+          />
+        </div>
+        <div class="paper hand">
+          <img
+            src="images/paper.png"
+            alt="paper"
+            height="150px"
+            width="150px"
+            onclick="userchoice('paper')"
+          />
+        </div>
+        <div class="scissors hand">
+          <img
+            src="images/scissors.png"
+            alt="scissors"
+            height="150px"
+            width="150px"
+            onclick="userchoice('scissors')"
+          />
+        </div>
+      </div>
+      <!--result-->
+      <div class="contest">
+        <div class="user">
+          <h2>User choice</h2>
+          <div class="userimage">
+            <img
+              src="images/paper.png"
+              height="200px"
+              width="200px"
+              id="userimageid"
+              ;
+            />
+          </div>
+        </div>
+        <div class="message">
+          <div class="answer"><h2 id="finalmessage">You Win!</h2></div>
+          <div class="btn"><button onclick="reset()">Play Again</button></div>
+        </div>
+        <div class="bot">
+          <h2>Computer's choice</h2>
+          <div class="botimage">
+            <img
+              src="images/scissors.png"
+              height="200px"
+              width="200px"
+              id="botimageid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
